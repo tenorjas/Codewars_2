@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/sum_of_two_lowest_positive_integers.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
