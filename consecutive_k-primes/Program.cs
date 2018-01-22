@@ -46,6 +46,7 @@ namespace consecutive_k_primes
         }
         static void Main(string[] args)
         {
+            // this is dummy code just to have something in the Main function
             Console.WriteLine("Hello World!");
             int[] primes = { 2, 3, 5, 7 };
 
