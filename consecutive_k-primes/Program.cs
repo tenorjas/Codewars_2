@@ -67,6 +67,16 @@ namespace consecutive_k_primes
             Console.WriteLine("According to calculations, array1 contains {0} consecutive {1}-primes.", consec1, k1);
             Console.WriteLine("Expected value is 3.");
 
+            // case 2
+            long[] array2 = { 10175, 10185, 10180, 10197 };
+            int k2 = 4;
+
+            int consec2 = ConsecKprimes(k2, array2);
+
+            Console.WriteLine("According to calculations, array2 contains {0} consecutive {1}-primes.", consec2, k2);
+            Console.WriteLine("Expected value is 3.");
+
+
         }
     }
 }
