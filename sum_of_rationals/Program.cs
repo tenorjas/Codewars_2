@@ -9,7 +9,7 @@ namespace sum_of_rationals
         {
             // your code
             //decimal sum = 0;
-
+            // I'm tabling this one until I learn arrays of arrays
             Console.WriteLine(l.Length);
 
             return "zero";
