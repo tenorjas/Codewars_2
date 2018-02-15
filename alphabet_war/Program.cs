@@ -13,21 +13,46 @@ namespace alphabet_war
 
             // Note: the following two if statements are needed in order to
             // avoid an out of bounds error in the following for loop
-            if (characters[0] == '*') // if the first character is a *,
-                characters[0] = '_'; // make it a _
+            // if (characters[0] == '*') 
+            // {
+            //     characters[0] = '_'; 
+            //     characters[1] = '_';
+            // }
 
-            if (characters[x - 1] == '*') // if the last character is a *,
-                characters[x - 1] = '_'; // make it a _
+            // if (characters[x - 1] == '*') 
+            // {
+            //     characters[x-2] = '_';
+            //     characters[x - 1] = '_'; 
+            // }
 
             // iterate through the array and change all of the *s and the
             // adjacent characters to _
             for (int i = 0; i < x; i++)
             {
-                if (characters[i] == '*')
+                if (i == 0)
                 {
-                    characters[i - 1] = '_';
-                    characters[i] = '_';
-                    characters[i + 1] = '_';
+                    if (characters[i] == '*')
+                    {
+                        characters[i] = '_';
+                        characters[i + 1] = '_';
+                    }
+                }
+                else if(i == x-1)
+                {
+                    if(characters[i] == '*')
+                    {
+                        characters[i-1] = '_';
+                        characters[i] = '_';
+                    }
+                }
+                else
+                {
+                    if (characters[i] == '*')
+                    {
+                        characters[i - 1] = '_';
+                        characters[i] = '_';
+                        characters[i + 1] = '_';
+                    }
                 }
             }
 
