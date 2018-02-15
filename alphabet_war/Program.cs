@@ -34,14 +34,16 @@ namespace alphabet_war
                     if (characters[i] == '*')
                     {
                         characters[i] = '_';
-                        characters[i + 1] = '_';
+                        if (characters[i + 1] != '*')
+                            characters[i + 1] = '_';
                     }
                 }
-                else if(i == x-1)
+                else if (i == x - 1)
                 {
-                    if(characters[i] == '*')
+                    if (characters[i] == '*')
                     {
-                        characters[i-1] = '_';
+                        if (characters[i - 1] != '*')
+                            characters[i - 1] = '_';
                         characters[i] = '_';
                     }
                 }
@@ -49,9 +51,11 @@ namespace alphabet_war
                 {
                     if (characters[i] == '*')
                     {
-                        characters[i - 1] = '_';
+                        if (characters[i - 1] != '*')
+                            characters[i - 1] = '_';
                         characters[i] = '_';
-                        characters[i + 1] = '_';
+                        if (characters[i + 1] != '*')
+                            characters[i + 1] = '_';
                     }
                 }
             }
