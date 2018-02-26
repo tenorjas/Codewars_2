@@ -7,9 +7,9 @@ namespace braking_well
         public static double Dist(double v, double mu)        // suppose reaction time is 1
         {
             // your code
-            double g = 9.81;
-            double t = 1;
-            double v1 = v * 0.27777777777777777778;
+            double g = 9.81; // gravity in m/s/s
+            double t = 1;    // reaction time = 1 second
+            double v1 = v * 0.27777777777777777778; // convert kph to mps
 
             double reactionDistance = v1 * t;
             double brakingDistance = v1 * v1 / (2 * mu * g);
